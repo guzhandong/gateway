@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.renewable.gateway.dao.InclinationMapper" >
+  <resultMap id="BaseResultMap" type="com.renewable.gateway.pojo.Inclination" >
+    <constructor >
+      <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="angle_x" jdbcType="DOUBLE" javaType="java.lang.Double" />
+      <arg column="angle_y" jdbcType="DOUBLE" javaType="java.lang.Double" />
+      <arg column="temperature" jdbcType="DOUBLE" javaType="java.lang.Double" />
+      <arg column="create_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="version" jdbcType="VARCHAR" javaType="java.lang.String" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, angle_x, angle_y, temperature, create_time, version
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from sensor_inclination
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from sensor_inclination
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.renewable.gateway.pojo.Inclination" >
+    insert into sensor_inclination (id, angle_x, angle_y, 
+      temperature, create_time, version
+      )
+    values (#{id,jdbcType=INTEGER}, #{angleX,jdbcType=DOUBLE}, #{angleY,jdbcType=DOUBLE}, 
+      #{temperature,jdbcType=DOUBLE}, #{createTime,jdbcType=TIMESTAMP}, #{version,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.renewable.gateway.pojo.Inclination" >
+    insert into sensor_inclination
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="angleX != null" >
+        angle_x,
+      </if>
+      <if test="angleY != null" >
+        angle_y,
+      </if>
+      <if test="temperature != null" >
+        temperature,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="version != null" >
+        version,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="angleX != null" >
+        #{angleX,jdbcType=DOUBLE},
+      </if>
+      <if test="angleY != null" >
+        #{angleY,jdbcType=DOUBLE},
+      </if>
+      <if test="temperature != null" >
+        #{temperature,jdbcType=DOUBLE},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="version != null" >
+        #{version,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.renewable.gateway.pojo.Inclination" >
+    update sensor_inclination
+    <set >
+      <if test="angleX != null" >
+        angle_x = #{angleX,jdbcType=DOUBLE},
+      </if>
+      <if test="angleY != null" >
+        angle_y = #{angleY,jdbcType=DOUBLE},
+      </if>
+      <if test="temperature != null" >
+        temperature = #{temperature,jdbcType=DOUBLE},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="version != null" >
+        version = #{version,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.renewable.gateway.pojo.Inclination" >
+    update sensor_inclination
+    set angle_x = #{angleX,jdbcType=DOUBLE},
+      angle_y = #{angleY,jdbcType=DOUBLE},
+      temperature = #{temperature,jdbcType=DOUBLE},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      version = #{version,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
