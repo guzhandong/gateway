@@ -72,7 +72,11 @@
         </javaClientGenerator>
 
 
-        <table tableName="sensor_inclination" domainObjectName="Inclination" enableCountByExample="false"
+        <!--已完成-->
+        <!--<table tableName="sensor_inclination" domainObjectName="Inclination" enableCountByExample="false"-->
+               <!--enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false"></table>-->
+        <table tableName="sensor_register" domainObjectName="SensorRegister" enableCountByExample="false"
                enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false"></table>
 
