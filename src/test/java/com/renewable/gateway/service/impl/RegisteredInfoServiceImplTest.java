@@ -1,5 +1,6 @@
 package com.renewable.gateway.service.impl;
 
+import com.renewable.gateway.BaseSpringTestCase;
 import com.renewable.gateway.common.ServerResponse;
 import com.renewable.gateway.dao.SensorRegisterMapper;
 import com.renewable.gateway.pojo.SensorRegister;
@@ -29,7 +30,7 @@ import static junit.framework.TestCase.assertTrue;
 */
 @RunWith(SpringJUnit4ClassRunner.class)
 
-public class RegisteredInfoServiceImplTest extends BaseSpringTestCase{
+public class RegisteredInfoServiceImplTest extends BaseSpringTestCase {
 
 //    @Autowired
 //    private SensorRegisterMapper sensorRegisterMapper;

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EntryPointsManager">
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="org.springframework.beans.factory.annotation.Autowired" />
+    </list>
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$" />
@@ -10,16 +15,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
-  </component>
-  <component name="ProjectPlainTextFileTypeManager">
-    <file url="file://$PROJECT_DIR$/src/main/resources/mappers/CartMapper.xml" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mappers/OrderItemMapper.xml" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mappers/OrderMapper.xml" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mappers/PayInfoMapper.xml" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mappers/ProductMapper.xml" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mappers/ShippingMapper.xml" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

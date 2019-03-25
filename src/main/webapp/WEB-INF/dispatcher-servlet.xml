@@ -11,6 +11,11 @@
     <!--包扫面。扫描controller注解。将controller注解到类上，就形成controller注解。实现注释驱动Bean定义，同时将bean自动注入容器中使用。-->
     <context:component-scan base-package="com.renewable.gateway" annotation-config="true"/>
 
+    <context:component-scan base-package="com.renewable.gateway">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+    </context:component-scan>
+
+
     <!--类似拦截器。相当于注册了DefaultAnnotationHandlerMapping和AnnotationMethodHandlerAdapter两个bean，配置一些messageconverter。即解决了@Controller注解的使用前提配置。-->
     <!--可查看https://www.cnblogs.com/shanheyongmu/p/5552427.html-->
     <mvc:annotation-driven>

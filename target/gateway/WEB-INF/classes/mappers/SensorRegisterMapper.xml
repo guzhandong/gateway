@@ -4,17 +4,20 @@
   <resultMap id="BaseResultMap" type="com.renewable.gateway.pojo.SensorRegister" >
     <constructor >
       <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="nick_name" jdbcType="VARCHAR" javaType="java.lang.String" />
       <arg column="port" jdbcType="VARCHAR" javaType="java.lang.String" />
       <arg column="address" jdbcType="VARCHAR" javaType="java.lang.String" />
-      <arg column="name" jdbcType="VARCHAR" javaType="java.lang.String" />
       <arg column="type" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="model" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="zero" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="baudrate" jdbcType="INTEGER" javaType="java.lang.Integer" />
       <arg column="remake" jdbcType="VARCHAR" javaType="java.lang.String" />
       <arg column="create_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
       <arg column="update_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
     </constructor>
   </resultMap>
   <sql id="Base_Column_List" >
-    id, port, address, name, type, remake, create_time, update_time
+    id, nick_name, port, address, type, model, zero, baudrate, remake, create_time, update_time
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
@@ -27,12 +30,14 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.renewable.gateway.pojo.SensorRegister" >
-    insert into sensor_register (id, port, address,
-      name, type, remake, 
+    insert into sensor_register (id, nick_name, port,
+      address, type, model, 
+      zero, baudrate, remake, 
       create_time, update_time)
-    values (#{id,jdbcType=INTEGER}, #{port,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, 
-      #{name,jdbcType=VARCHAR}, #{type,jdbcType=INTEGER}, #{remake,jdbcType=VARCHAR}, 
-      #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
+    values (#{id,jdbcType=INTEGER}, #{nick_name,jdbcType=VARCHAR}, #{port,jdbcType=VARCHAR},
+      #{address,jdbcType=VARCHAR}, #{type,jdbcType=INTEGER}, #{model,jdbcType=INTEGER}, 
+      #{zero,jdbcType=INTEGER}, #{baudrate,jdbcType=INTEGER}, #{remake,jdbcType=VARCHAR}, 
+      now(), now())
   </insert>
   <insert id="insertSelective" parameterType="com.renewable.gateway.pojo.SensorRegister" >
     insert into sensor_register
@@ -40,17 +45,26 @@
       <if test="id != null" >
         id,
       </if>
+      <if test="nick_name != null" >
+        nick_name,
+      </if>
       <if test="port != null" >
         port,
       </if>
       <if test="address != null" >
         address,
       </if>
-      <if test="name != null" >
-        name,
-      </if>
       <if test="type != null" >
         type,
+      </if>
+      <if test="model != null" >
+        model,
+      </if>
+      <if test="zero != null" >
+        zero,
+      </if>
+      <if test="baudrate != null" >
+        baudrate,
       </if>
       <if test="remake != null" >
         remake,
@@ -66,17 +80,26 @@
       <if test="id != null" >
         #{id,jdbcType=INTEGER},
       </if>
+      <if test="nick_name != null" >
+        #{nick_name,jdbcType=VARCHAR},
+      </if>
       <if test="port != null" >
         #{port,jdbcType=VARCHAR},
       </if>
       <if test="address != null" >
         #{address,jdbcType=VARCHAR},
       </if>
-      <if test="name != null" >
-        #{name,jdbcType=VARCHAR},
-      </if>
       <if test="type != null" >
         #{type,jdbcType=INTEGER},
+      </if>
+      <if test="model != null" >
+        #{model,jdbcType=INTEGER},
+      </if>
+      <if test="zero != null" >
+        #{zero,jdbcType=INTEGER},
+      </if>
+      <if test="baudrate != null" >
+        #{baudrate,jdbcType=INTEGER},
       </if>
       <if test="remake != null" >
         #{remake,jdbcType=VARCHAR},
@@ -92,17 +115,26 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.renewable.gateway.pojo.SensorRegister" >
     update sensor_register
     <set >
+      <if test="nick_name != null" >
+        nick_name = #{nick_name,jdbcType=VARCHAR},
+      </if>
       <if test="port != null" >
         port = #{port,jdbcType=VARCHAR},
       </if>
       <if test="address != null" >
         address = #{address,jdbcType=VARCHAR},
       </if>
-      <if test="name != null" >
-        name = #{name,jdbcType=VARCHAR},
-      </if>
       <if test="type != null" >
         type = #{type,jdbcType=INTEGER},
+      </if>
+      <if test="model != null" >
+        model = #{model,jdbcType=INTEGER},
+      </if>
+      <if test="zero != null" >
+        zero = #{zero,jdbcType=INTEGER},
+      </if>
+      <if test="baudrate != null" >
+        baudrate = #{baudrate,jdbcType=INTEGER},
       </if>
       <if test="remake != null" >
         remake = #{remake,jdbcType=VARCHAR},
@@ -118,10 +150,13 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.renewable.gateway.pojo.SensorRegister" >
     update sensor_register
-    set port = #{port,jdbcType=VARCHAR},
+    set nick_name = #{nick_name,jdbcType=VARCHAR},
+      port = #{port,jdbcType=VARCHAR},
       address = #{address,jdbcType=VARCHAR},
-      name = #{name,jdbcType=VARCHAR},
       type = #{type,jdbcType=INTEGER},
+      model = #{model,jdbcType=INTEGER},
+      zero = #{zero,jdbcType=INTEGER},
+      baudrate = #{baudrate,jdbcType=INTEGER},
       remake = #{remake,jdbcType=VARCHAR},
       create_time = #{createTime,jdbcType=TIMESTAMP},
       update_time = #{updateTime,jdbcType=TIMESTAMP}
@@ -135,10 +170,48 @@
     where port = #{port,jdbcType=VARCHAR}
     and address = #{address,jdbcType=VARCHAR}
   </select>
-
   <select id="countSensor" resultType="integer">
     select
     count(id)
     from sensor_register
+  </select>
+  <select id="checkNickname" resultType="integer" parameterType="string">
+    select
+    count(id)
+    from sensor_register
+    where nick_name=#{str}
+  </select>
+  <select id="checkPortAndAdderss" resultType="integer" parameterType="string">
+    select
+    count(id)
+    from sensor_register
+    where port = #{port,jdbcType=VARCHAR}
+    and address = #{address,jdbcType=VARCHAR}
+  </select>
+  <select id="selectByNickname" resultMap="BaseResultMap" parameterType="string">
+    select
+    <include refid="Base_Column_List" />
+    from sensor_register
+    where nick_name=#{nickname}
+  </select>
+  <select id="selectSensorList" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from sensor_register
+    order by id asc
+  </select>
+  <select id="selectSensorListByPort" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from sensor_register
+    where port=#{port}
+    order by id asc
+  </select>
+  <select id="selectSerialList" resultType="string">
+    select
+    port
+    from sensor_register
+    group by port
+    order by id asc
   </select>
 </mapper>

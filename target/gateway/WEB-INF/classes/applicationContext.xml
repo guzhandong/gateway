@@ -12,8 +12,16 @@
 <!--扫描，扫描"com.renewable"下的注解，便于在类中注解-->
     <context:component-scan base-package="com.renewable.gateway" annotation-config="true"/>
 
+    <context:component-scan base-package="com.renewable.gateway">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+    </context:component-scan>
     <!--<context:annotation-config/>-->
     <aop:aspectj-autoproxy/>
+
+    <context:property-placeholder location="classpath:datasource.properties"/>
+
+    <!-- 二期新增spring schedule的时候新增的 -->
+    <task:annotation-driven/>
 
     <!--引入分配置文件-->
     <import resource="applicationContext-datasource.xml"/>
