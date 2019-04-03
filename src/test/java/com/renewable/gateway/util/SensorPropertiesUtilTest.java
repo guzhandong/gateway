@@ -1,4 +1,4 @@
-package test.com.renewable.gateway.util; 
+package com.renewable.gateway.util;
 
 import com.renewable.gateway.util.SensorPropertiesUtil;
 import org.junit.Test;

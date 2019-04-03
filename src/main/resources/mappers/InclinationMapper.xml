@@ -29,7 +29,7 @@
       temperature, create_time, version
       )
     values (#{id,jdbcType=INTEGER}, #{angleX,jdbcType=DOUBLE}, #{angleY,jdbcType=DOUBLE}, 
-      #{temperature,jdbcType=DOUBLE}, #{createTime,jdbcType=TIMESTAMP}, #{version,jdbcType=VARCHAR}
+      #{temperature,jdbcType=DOUBLE}, #{now(),jdbcType=TIMESTAMP}, #{version,jdbcType=VARCHAR}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.renewable.gateway.pojo.Inclination" >

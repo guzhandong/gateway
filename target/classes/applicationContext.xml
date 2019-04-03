@@ -15,6 +15,12 @@
     <context:component-scan base-package="com.renewable.gateway">
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
     </context:component-scan>
+
+    <!-- 引入第三方的jar包中的类，如SerialPort -->
+    <!--<bean id="SerialPortBean" class="gnu.io.SerialPort">-->
+    <!--</bean>-->
+    
+    
     <!--<context:annotation-config/>-->
     <aop:aspectj-autoproxy/>
 
