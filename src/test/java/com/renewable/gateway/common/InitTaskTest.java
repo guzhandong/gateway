@@ -1,58 +1,49 @@
 package com.renewable.gateway.common;
 
 import com.renewable.gateway.BaseSpringTestCase;
-import com.renewable.gateway.util.RedisPoolUtil;
-import org.junit.Test;
-import org.junit.Before; 
 import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
-import static org.junit.Assert.assertNotNull;
-
-/** 
-* InitTask Tester. 
-* 
-* @author <Authors name> 
-* @since <pre>Mar 20, 2019</pre> 
-* @version 1.0 
-*/ 
+/**
+ * InitTask Tester.
+ *
+ * @author <Authors name>
+ * @version 1.0
+ * @since <pre>Mar 20, 2019</pre>
+ */
 public class InitTaskTest extends BaseSpringTestCase {
 
-@Before
-public void before() throws Exception { 
-} 
+    @Before
+    public void before() throws Exception {
+    }
 
-@After
-public void after() throws Exception { 
-} 
+    @After
+    public void after() throws Exception {
+    }
 
-/** 
-* 
-* Method: init() 
-* 
-*/ 
-@Test
-public void testInit() throws Exception { 
+    /**
+     * Method: init()
+     */
+    @Test
+    public void testInit() throws Exception {
 //TODO: Test goes here... 
-} 
+    }
 
-/** 
-* 
-* Method: updateLocalRegister() 
-* 
-*/ 
-@Test
-public void testUpdateLocalRegister() throws Exception { 
+    /**
+     * Method: updateLocalRegister()
+     */
+    @Test
+    public void testUpdateLocalRegister() throws Exception {
 //TODO: Test goes here... 
-} 
+    }
 
 
-/** 
-* 
-* Method: getPhysicalRegister() 
-* 
-*/ 
-@Test
-public void testGetPhysicalRegister() throws Exception { 
+    /**
+     * Method: getPhysicalRegister()
+     */
+    @Test
+    public void testGetPhysicalRegister() throws Exception {
 //TODO: Test goes here... 
 /* 
 try { 
@@ -63,16 +54,14 @@ try {
 } catch(IllegalAccessException e) { 
 } catch(InvocationTargetException e) { 
 } 
-*/ 
-} 
+*/
+    }
 
-/** 
-* 
-* Method: initLocalRegister() 
-* 
-*/ 
-@Test
-public void testInitLocalRegister() throws Exception { 
+    /**
+     * Method: initLocalRegister()
+     */
+    @Test
+    public void testInitLocalRegister() throws Exception {
 //TODO: Test goes here...
 //    InitTask initTask = new InitTask();
 //    initTask.initLocalRegister();
@@ -86,7 +75,7 @@ try {
 } catch(IllegalAccessException e) { 
 } catch(InvocationTargetException e) { 
 } 
-*/ 
-} 
+*/
+    }
 
 } 

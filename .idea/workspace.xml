@@ -7,9 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d4ad3d5-203a-4e0c-84d1-3c3c7a2b7469" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error.log.2019-03-20.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error.log.2019-03-25.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error.log.2019-03-26.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error.log.2019-03-27.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/renewable/gateway" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/renewable/gateway" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/renewable/gateway/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/renewable/gateway/.idea/encodings.xml" beforeDir="false" />
@@ -27,49 +28,71 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/renewable/gateway/src/test/java/com/gateWay/AppTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/renewable/gateway/target/classes/com/newable/App.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/renewable/gateway/target/test-classes/com/newable/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources.dev/gateway.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources.dev/gateway.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources.dev/sensor.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources.dev/sensor.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/InclinationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/InclinationMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/InclinationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/SensorRegisterMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/SensorRegisterMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/renewable/gateway/BaseSpringTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/renewable/gateway/BaseSpringTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/renewable/gateway/common/InitTaskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/renewable/gateway/common/InitTaskTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/renewable/gateway/common/RedisPoolTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/renewable/gateway/common/RedisPoolTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/renewable/gateway/service/impl/IRegisteredInfoServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/renewable/gateway/service/impl/IRegisteredInfoServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/renewable/gateway/service/impl/RegisteredInfoServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/renewable/gateway/service/impl/RegisteredInfoServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/renewable/gateway/util/RedisPoolUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/renewable/gateway/util/RedisPoolUtilTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/renewable/gateway/util/SensorPropertiesUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/renewable/gateway/util/SensorPropertiesUtilTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/common/RedisPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/renewable/gateway/common/RedisPool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/common/Const$SensorAddress.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/common/Const.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/renewable/gateway/common/Const.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/common/sensor/InclinationConst$InclinationSensor1Enum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/renewable/gateway/common/sensor/InclinationConst$InclinationSensor1Enum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/common/sensor/InclinationConst.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/renewable/gateway/common/sensor/InclinationConst.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/controller/portal/InclinationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/renewable/gateway/controller/portal/InclinationController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/controller/portal/SensorDataController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/renewable/gateway/controller/portal/SensorDataController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/serialTemp/DispatchTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/serialTemp/SerialListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/serialTemp/SerialPool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/serialTemp/SerialTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/serialTemp/sensor/IInclinationDeal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/serialTemp/sensor/SensorDeal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/serialTemp/sensor/SerialSensorDeal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/serialTemp/sensor/impl/InclinationDealImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/controller/portal/SensorRegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/renewable/gateway/controller/portal/SensorRegisterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/dao/InclinationMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/renewable/gateway/dao/InclinationMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/pojo/Inclination.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/renewable/gateway/pojo/Inclination.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/pojo/SensorRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/renewable/gateway/pojo/SensorRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/serial/SerialListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/serial/SerialPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/renewable/gateway/serial/SerialPool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/serial/sensor/InclinationDeal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/renewable/gateway/serial/sensor/InclinationDeal.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/service/IInclinationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/renewable/gateway/service/IInclinationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/service/IRegisteredInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/renewable/gateway/service/IRegisteredInfoService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/service/ISensorDataService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/renewable/gateway/service/ISensorDataService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/service/impl/IInclinationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/renewable/gateway/service/impl/IInclinationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/service/impl/IRegisteredInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/renewable/gateway/service/impl/IRegisteredInfoServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/service/impl/ISensorDataServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/renewable/gateway/service/impl/ISensorDataServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/taskDemo/simpleTimer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/renewable/gateway/taskDemo/simpleTimer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/util/SerialPortUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/renewable/gateway/util/SerialPortUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/renewable/gateway/vo/InclinationVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/renewable/gateway/vo/InclinationVo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mappers/InclinationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/InclinationMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/common/RedisPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/common/RedisPool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/SensorRegisterMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/SensorRegisterMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/common/Const$SensorAddress.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/common/Const.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/common/Const.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/common/sensor/InclinationConst$InclinationSensor1Enum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/common/sensor/InclinationConst$InclinationSensor1Enum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/common/sensor/InclinationConst.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/common/sensor/InclinationConst.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/controller/portal/InclinationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/controller/portal/InclinationController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/controller/portal/SensorDataController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/controller/portal/SensorDataController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/serialTemp/DispatchTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/serialTemp/SerialListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/serialTemp/SerialPool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/serialTemp/SerialTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/serialTemp/sensor/IInclinationDeal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/serialTemp/sensor/SensorDeal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/serialTemp/sensor/SerialSensorDeal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/serialTemp/sensor/impl/InclinationDealImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/controller/portal/SensorRegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/controller/portal/SensorRegisterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/dao/InclinationMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/dao/InclinationMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/pojo/Inclination.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/pojo/Inclination.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/pojo/SensorRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/pojo/SensorRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/serial/SerialPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/serial/SerialPool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/serial/sensor/InclinationDeal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/serial/sensor/InclinationDeal.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/service/IInclinationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/service/IInclinationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/service/IRegisteredInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/service/IRegisteredInfoService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/service/ISensorDataService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/service/ISensorDataService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/service/impl/IInclinationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/service/impl/IInclinationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/service/impl/IRegisteredInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/service/impl/IRegisteredInfoServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/service/impl/ISensorDataServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/service/impl/ISensorDataServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/taskDemo/simpleTimer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/taskDemo/simpleTimer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/util/SerialPortUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/util/SerialPortUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/vo/InclinationVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/com/renewable/gateway/vo/InclinationVo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/generatorConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/mappers/InclinationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/mappers/InclinationMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/mappers/SensorRegisterMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/WEB-INF/classes/mappers/SensorRegisterMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/gateway/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway/logs/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/com/renewable/gateway/util/SensorPropertiesUtilTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/renewable/gateway/service/impl/IRegisteredInfoServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/renewable/gateway/service/impl/IRegisteredInfoServiceImplTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -92,66 +115,66 @@
     <session id="-22929239">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="62" />
-          <entry key="project.open.time.0" value="12" />
-          <entry key="project.open.time.1" value="34" />
+          <entry key="project.closed" value="65" />
+          <entry key="project.open.time.0" value="13" />
+          <entry key="project.open.time.1" value="35" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.2" value="12" />
+          <entry key="project.open.time.2" value="13" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="73" />
+          <entry key="project.open.time.7" value="3" />
+          <entry key="project.opened" value="77" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="SerialPortUtil" value="1" />
-          <entry key="class" value="56" />
+          <entry key="class" value="57" />
           <entry key="configurations" value="1" />
           <entry key="gz" value="1" />
-          <entry key="java" value="682" />
+          <entry key="java" value="773" />
           <entry key="jsp" value="1" />
           <entry key="log" value="5" />
           <entry key="properties" value="58" />
-          <entry key="xml" value="95" />
+          <entry key="xml" value="117" />
           <entry key="xsd" value="1" />
           <entry key="这些任务也许会议timer中的task来操作" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="56" />
-          <entry key="JAVA" value="682" />
+          <entry key="CLASS" value="57" />
+          <entry key="JAVA" value="773" />
           <entry key="JSP" value="1" />
           <entry key="Log" value="5" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="59" />
           <entry key="UML" value="1" />
-          <entry key="XML" value="96" />
+          <entry key="XML" value="118" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="class" value="1" />
           <entry key="dummy" value="82" />
-          <entry key="java" value="51249" />
+          <entry key="java" value="61705" />
           <entry key="properties" value="958" />
-          <entry key="xml" value="1567" />
+          <entry key="xml" value="2502" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="51249" />
+          <entry key="JAVA" value="61705" />
           <entry key="PLAIN_TEXT" value="82" />
           <entry key="Properties" value="958" />
-          <entry key="SQL" value="31" />
-          <entry key="XML" value="1536" />
+          <entry key="SQL" value="79" />
+          <entry key="XML" value="2423" />
         </counts>
       </usages-collector>
     </session>
@@ -161,11 +184,80 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/SerialPool.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/sensor/InclinationDeal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="93" column="75" selection-start-line="93" selection-start-column="75" selection-end-line="93" selection-end-column="75" />
+            <state relative-caret-position="158">
+              <caret line="134" selection-start-line="134" selection-end-line="134" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;method#list2OriginData#0;class#InclinationDeal#0" />
+                <element signature="docComment;method#unsignedShortToByte2#0;class#InclinationDeal#0" />
+                <element signature="method#int2Byte#0;class#InclinationDeal#0" />
+                <element signature="method#objece2ListData#0;class#InclinationDeal#0" />
+                <element signature="docComment;method#objece2ListData#1;class#InclinationDeal#0" />
+                <element signature="method#objece2ListData#1;class#InclinationDeal#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/taskDemo/simpleTimer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="687">
+              <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/sensor/InclinationDeal526T.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="245" column="13" selection-start-line="245" selection-start-column="13" selection-end-line="245" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/InclinationMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="706">
+              <caret line="81" column="22" lean-forward="true" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/util/SerialPortUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="157" column="41" selection-start-line="157" selection-start-column="41" selection-end-line="157" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/util/HexUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2394">
+              <caret line="168" column="23" selection-start-line="168" selection-start-column="23" selection-end-line="168" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/dao/InclinationMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -176,29 +268,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/SerialListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="97" column="61" lean-forward="true" selection-start-line="97" selection-start-column="61" selection-end-line="97" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/taskDemo/simpleTimer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="635">
-              <caret line="57" column="52" lean-forward="true" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/IInclinationService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            <state relative-caret-position="285">
+              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
             </state>
           </provider>
         </entry>
@@ -206,8 +277,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/impl/IInclinationServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="95" column="60" lean-forward="true" selection-start-line="95" selection-start-column="60" selection-end-line="95" selection-end-column="60" />
+            <state relative-caret-position="426">
+              <caret line="127" column="102" selection-start-line="127" selection-start-column="93" selection-end-line="127" selection-end-column="102" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -215,34 +286,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/sensor/InclinationDeal.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/util/OtherUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="144" column="33" selection-start-line="144" selection-start-column="33" selection-end-line="144" selection-end-column="33" />
+            <state relative-caret-position="357">
+              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#originData2Object#0;class#InclinationDeal#0" />
-                <element signature="docComment;method#list2OriginData#0;class#InclinationDeal#0" />
-                <element signature="docComment;method#unsignedShortToByte2#0;class#InclinationDeal#0" />
-                <element signature="method#unsignedShortToByte2#0;class#InclinationDeal#0" />
-                <element signature="method#int2Byte#0;class#InclinationDeal#0" />
-                <element signature="docComment;method#objece2ListData#1;class#InclinationDeal#0" />
-                <element signature="method#objece2ListData#1;class#InclinationDeal#0" />
-                <element signature="docComment;method#origin2Double#0;class#InclinationDeal#0" />
-                <element signature="method#origin2Double#0;class#InclinationDeal#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp/sensor/impl/InclinationDealImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="329" column="14" lean-forward="true" selection-start-line="329" selection-start-column="14" selection-end-line="329" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1461#1462#0" expanded="true" />
+                <element signature="e#1534#1535#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -261,16 +312,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>端口已被占用</find>
-      <find>test</find>
-      <find>getBuffer</find>
-      <find>set</find>
-      <find>load</find>
-      <find>inclination</find>
-      <find>sonsor</find>
-      <find>sys</find>
-      <find>spring-test</find>
-      <find>ch.qos.logback.core.CoznsoleAppender</find>
       <find>60</find>
       <find>chec</find>
       <find>name</find>
@@ -282,7 +323,6 @@
       <find>NICKNAME</find>
       <find>Const.NICKNAME</find>
       <find>initLocalRegister</find>
-      <find>system.out</find>
       <find>priority</find>
       <find>spring</find>
       <find>sendB</find>
@@ -291,6 +331,17 @@
       <find>listener</find>
       <find>now</find>
       <find>createtime</find>
+      <find>angleY</find>
+      <find>clean_interval</find>
+      <find>cleanInterval</find>
+      <find>create_time</find>
+      <find>big</find>
+      <find>createTime</find>
+      <find>#{now(),jdbcType=TIMESTAMP}</find>
+      <find>Math</find>
+      <find>unsi</find>
+      <find>subBytes</find>
+      <find>system.out</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -299,57 +350,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/task/Task.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/task/DataTaskDispatch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/task/TaskController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/common/TEST.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/renewable/gateway/service/impl/BaseSpringTestCase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/impl/IRegisteredInfoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/common/Const.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/renewable/gateway/service/impl/RegisteredInfoServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/renewable/gateway/service/impl/IRegisteredInfoServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/util/RedisPoolUtil.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/renewable/gateway/util/RedisPoolUtilTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/renewable/gateway/common/InitTaskTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/common/InitTask.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/renewable/gateway/BaseSpringTestCase.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/task/config/ScheduleConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/datacleanTemp/temp/CleanTest.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/impl/ISensorDataServiceImple.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/SensorPool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp/sensor/InclinationDeal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp/sensor/SensorDeal.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp/sensor/IInclinationDeal.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp/sensor/SerialSensorDeal.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/renewable/gateway/common/RedisPoolTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp/SerialTask.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/renewable/gateway/util/SensorPropertiesUtilTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/dao/InclinationMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/util/SensorDealUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp/SerialListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/common/RedisPool.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/SerialDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/util/SerialPortUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/controller/portal/SensorDataController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp/SerialPool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/ISensorDataService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/controller/portal/InclinationController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mappers/InclinationMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/impl/ISensorDataServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp2_receive/SerialPoolDemo.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/renewable/gateway/serialTemp/SerialPoolTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/SerialPoolDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/SerialPool.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp/sensor/impl/InclinationDealImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/sensor/impl/InclinationDealImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/SerialListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/controller/portal/InclinationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/common/Const.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/pojo/Inclination.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/vo/InclinationVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/pojo/SensorRegister.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/SensorRegisterMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/IInclinationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/pojo/InclinationDealed.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/pojo/InclinationDeal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/dao/SensorRegisterMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/IInclinationDealService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/impl/IInclinationDealServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/controller/portal/InclinationDealController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/ISensorDataService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/impl/IRegisteredInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/impl/ISensorDataServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/dao/InclinationMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/IRegisteredInfoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/controller/portal/SensorRegisterController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/renewable/gateway/service/impl/IRegisteredInfoServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/renewable/gateway/util/HexUtilTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/InclinationMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/sensor/InclinationDeal826T.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/common/sensor/InclinationConst.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/SerialPool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/util/SerialPortUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/taskDemo/simpleTimer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/sensor/InclinationDeal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/util/HexUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/sensor/InclinationDeal526T.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/impl/IInclinationServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/IInclinationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/SerialListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/renewable/gateway/util/OtherUtil.java" />
       </list>
     </option>
   </component>
@@ -476,7 +527,35 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="serial" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
@@ -486,7 +565,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gateway" type="462c0819:PsiDirectoryNode" />
               <item name="serial" type="462c0819:PsiDirectoryNode" />
-              <item name="sensor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
@@ -495,28 +573,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="serialTemp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="serialTemp" type="462c0819:PsiDirectoryNode" />
+              <item name="serial" type="462c0819:PsiDirectoryNode" />
               <item name="sensor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="serialTemp" type="462c0819:PsiDirectoryNode" />
-              <item name="sensor" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
@@ -551,7 +609,31 @@
               <item name="gateway" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mappers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources.dev" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
@@ -591,16 +673,16 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="TEST&#9;FILE&#9;file://C:/Users/curek/IdeaProjects/Renewable_Power/gateway/src/test/java/com/renewable/gateway/common/InitTaskTest.java&#10;springframework&#9;FILE&#9;jar://C:/Users/curek/.m2/repository/org/springframework/spring-core/4.3.12.RELEASE/spring-core-4.3.12.RELEASE.jar!/org/springframework&#10;AbstractQueue&#9;PSI&#9;JAVA://java.util.concurrent.locks.AbstractQueuedSynchronizer&#10;concurrent&#9;PSI&#9;JAVA://org.apache.commons.lang3.concurrent.ConcurrentException&#10;ThreadPoolExecutor&#9;PSI&#9;JAVA://java.util.concurrent.ThreadPoolExecutor&#10;mmall&#9;FILE&#9;file://C:/Users/curek/IdeaProjects/Renewable_Power/gateway/src/main/resources.dev/mmall.properties&#10;beandefinitionRegist&#9;PSI&#9;JAVA://org.springframework.beans.factory.support.BeanDefinitionRegistry&#10;BeanDefinition&#9;PSI&#9;JAVA://org.springframework.beans.factory.config.BeanDefinition" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554280828690" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554973732762" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
@@ -630,11 +712,11 @@
       <recent name="C:\Users\curek\IdeaProjects\Renewable_Power\gateway\src\test\java\com\renewable\gateway\service\impl" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.renewable.gateway.serial.sensor" />
+      <recent name="com.renewable.gateway.service.impl" />
+      <recent name="com.renewable.gateway.controller.portal" />
       <recent name="com.renewable.gateway.serial" />
       <recent name="com.renewable.gateway" />
-      <recent name="com.renewable.gateway.task" />
-      <recent name="com.renewable.gateway.serialTemp.sensor" />
-      <recent name="com.renewable.gateway.serialTemp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\curek\IdeaProjects\Renewable_Power\gateway\src\main\resources" />
@@ -656,12 +738,12 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.renewable_server">
-    <configuration name="SerialPool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.renewable.gateway.serialTemp.SerialPool" />
+    <configuration name="HexUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.renewable.gateway.util.HexUtil" />
       <module name="gateway" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.renewable.gateway.serialTemp.*" />
+          <option name="PATTERN" value="com.renewable.gateway.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -669,12 +751,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SerialPoolDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.renewable.gateway.serial.SerialPoolDemo" />
+    <configuration name="InclinationDeal526T" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.renewable.gateway.serial.sensor.InclinationDeal526T" />
       <module name="gateway" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.renewable.gateway.serial.*" />
+          <option name="PATTERN" value="com.renewable.gateway.serial.sensor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OtherUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.renewable.gateway.util.OtherUtil" />
+      <module name="gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.renewable.gateway.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -695,34 +790,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisPoolTest.testGetJedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="simpleTimer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.renewable.gateway.taskDemo.simpleTimer" />
       <module name="gateway" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.renewable.gateway.common.*" />
+          <option name="PATTERN" value="com.renewable.gateway.taskDemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.renewable.gateway.common" />
-      <option name="MAIN_CLASS_NAME" value="com.renewable.gateway.common.RedisPoolTest" />
-      <option name="METHOD_NAME" value="testGetJedis" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SerialPoolTest.testSerialTaskGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gateway" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.renewable.gateway.serialTemp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.renewable.gateway.serialTemp" />
-      <option name="MAIN_CLASS_NAME" value="com.renewable.gateway.serialTemp.SerialPoolTest" />
-      <option name="METHOD_NAME" value="testSerialTaskGet" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -803,19 +879,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.renewable_server" />
-      <item itemvalue="Application.SerialPool" />
-      <item itemvalue="JUnit.RedisPoolTest.testGetJedis" />
-      <item itemvalue="JUnit.SerialPoolTest.testSerialTaskGet" />
-      <item itemvalue="Application.SerialPoolDemo" />
+      <item itemvalue="Application.InclinationDeal526T" />
+      <item itemvalue="Application.simpleTimer" />
       <item itemvalue="Application.SerialPortUtil" />
+      <item itemvalue="Application.OtherUtil" />
+      <item itemvalue="Application.HexUtil" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InclinationDeal526T" />
+        <item itemvalue="Application.HexUtil" />
+        <item itemvalue="Application.OtherUtil" />
         <item itemvalue="Application.SerialPortUtil" />
-        <item itemvalue="Application.SerialPoolDemo" />
-        <item itemvalue="Application.SerialPool" />
-        <item itemvalue="JUnit.SerialPoolTest.testSerialTaskGet" />
-        <item itemvalue="JUnit.RedisPoolTest.testGetJedis" />
+        <item itemvalue="Application.simpleTimer" />
       </list>
     </recent_temporary>
   </component>
@@ -901,7 +977,11 @@
       <workItem from="1554253733127" duration="5089000" />
       <workItem from="1554274599861" duration="1090000" />
       <workItem from="1554275700384" duration="190000" />
-      <workItem from="1554275896872" duration="5507000" />
+      <workItem from="1554275896872" duration="21310000" />
+      <workItem from="1554771646453" duration="21810000" />
+      <workItem from="1554802977864" duration="14565000" />
+      <workItem from="1554962759539" duration="453000" />
+      <workItem from="1554963218552" duration="10506000" />
     </task>
     <servers />
   </component>
@@ -938,7 +1018,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="419473000" />
+    <option name="totallyTimeSpent" value="482610000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -953,8 +1033,8 @@
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.54273945" visible="true" weight="0.22427572" />
-      <window_info id="Structure" order="1" sideWeight="0.45726055" side_tool="true" visible="true" weight="0.22427572" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5852349" visible="true" weight="0.22577423" />
+      <window_info id="Structure" order="1" sideWeight="0.4147651" side_tool="true" visible="true" weight="0.22577423" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -963,13 +1043,13 @@
       <window_info id="Web" order="7" sideWeight="0.65153736" side_tool="true" weight="0.26845637" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.38414007" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4995005" weight="0.43048403" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4995005" visible="true" weight="0.23274975" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.53964984" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329429" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.329429" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.39970717" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.39958805" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5004995" side_tool="true" weight="0.47888774" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.27291453" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -983,7 +1063,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.3295302" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32917082" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -1036,43 +1116,43 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/renewable/gateway/service/impl/RegisteredInfoServiceImplTest.java</url>
-          <line>99</line>
+          <line>82</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/renewable/gateway/service/impl/RegisteredInfoServiceImplTest.java</url>
-          <line>97</line>
+          <line>80</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/renewable/gateway/service/impl/RegisteredInfoServiceImplTest.java</url>
-          <line>98</line>
+          <line>81</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp/sensor/impl/InclinationDealImpl.java</url>
-          <line>267</line>
+          <line>268</line>
           <properties />
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp/sensor/impl/InclinationDealImpl.java</url>
-          <line>268</line>
+          <line>269</line>
           <properties />
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp/sensor/impl/InclinationDealImpl.java</url>
-          <line>266</line>
+          <line>267</line>
           <properties />
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp/SerialPool.java</url>
-          <line>199</line>
+          <line>198</line>
           <properties />
           <option name="timeStamp" value="82" />
         </line-breakpoint>
@@ -1084,219 +1164,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp/sensor/SerialSensorDeal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/util/concurrent/Callable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/renewable/gateway/util/RedisPoolUtilTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/renewable/gateway/util/SensorPropertiesUtilTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/renewable/gateway/service/impl/IRegisteredInfoServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="179" column="5" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/renewable/gateway/service/impl/RegisteredInfoServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="55" column="52" selection-start-line="55" selection-start-column="52" selection-end-line="55" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp/SerialTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="51" column="42" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/util/DateTimeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/util/SensorDealUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-71">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/util/Pool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/developer/java_libs_ex/mfz-rxtx-2.2-20081207-win-x64/RXTXcomm.jar!/gnu/io/I2C.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6444">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp/sensor/IInclinationDeal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/SensorPool.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/SerialSendTask.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/SerialReceiveTask.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/common/RedisPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/developer/java_libs_ex/mfz-rxtx-2.2-20081207-win-x64/RXTXcomm.jar!/gnu/io/SerialPort.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="64" column="52" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/developer/java_libs_ex/mfz-rxtx-2.2-20081207-win-x64/RXTXcomm.jar!/gnu/io/RXTXPort.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18810">
-          <caret line="1030" selection-start-line="1030" selection-end-line="1030" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp/SerialListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="95" column="88" selection-start-line="95" selection-start-column="88" selection-end-line="95" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/pojo/Inclination.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/RXTXcomm.jar!/gnu/io/SerialPortEventListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/RXTXcomm.jar!/gnu/io/SerialPort.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/RXTXcomm.jar!/gnu/io/SerialPortEvent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/RXTXcomm.jar!/gnu/io/RXTXPort.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="330" selection-start-line="330" selection-end-line="330" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/renewable/gateway/BaseSpringTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/SensorRegisterMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/InclinationMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/util/EventObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/controller/portal/InclinationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/dao/InclinationMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/controller/portal/SensorDataController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp/DispatchTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="43" lean-forward="true" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/renewable/gateway/serialTemp/SerialPoolTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -1311,68 +1178,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp2_receive/SerialPoolDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp2_receive/SerialPoolDemo.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp2_receive/SerialListener.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/sensor/IInclinationDeal.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/sensor/SerialSensorDeal.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/sensor/impl/InclinationDealImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/common/ServerResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serialTemp2_receive/SerialListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="23" selection-start-line="23" selection-end-line="127" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/util/SerialPortUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2527">
-          <caret line="133" selection-start-line="133" selection-end-line="133" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/sensor/IInclinationDeal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/sensor/SerialSensorDeal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/sensor/impl/InclinationDealImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="392" column="9" lean-forward="true" selection-start-line="392" selection-start-column="9" selection-end-line="392" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/impl/ISensorDataServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/ISensorDataService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="247">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1386,53 +1200,321 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/common/ServerResponse.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext-datasource.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="654">
+          <caret line="95" column="25" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/IInclinationService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/vo/InclinationVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        <state relative-caret-position="228">
+          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/impl/IInclinationServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/pojo/Inclination.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="95" column="60" lean-forward="true" selection-start-line="95" selection-start-column="60" selection-end-line="95" selection-end-column="60" />
+        <state relative-caret-position="95">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/pojo/InclinationDealed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/dao/InclinationDealedMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/pojo/InclinationDeal.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/SensorRegisterMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="15" column="74" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="74" />
+          <folding>
+            <element signature="n#select#2;n#mapper#0;n#!!top" />
+            <element signature="n#select#3;n#mapper#0;n#!!top" />
+            <element signature="n#select#4;n#mapper#0;n#!!top" />
+            <element signature="n#select#5;n#mapper#0;n#!!top" />
+            <element signature="n#select#6;n#mapper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/pojo/SensorRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/sensor/InclinationDeal.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/InclinationDealMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="144" column="33" selection-start-line="144" selection-start-column="33" selection-end-line="144" selection-end-column="33" />
+        <state relative-caret-position="350">
+          <caret line="75" column="86" selection-start-line="75" selection-start-column="86" selection-end-line="75" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/controller/portal/InclinationDealController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/dao/SensorRegisterMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#originData2Object#0;class#InclinationDeal#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/impl/IRegisteredInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="176" column="71" lean-forward="true" selection-start-line="176" selection-start-column="71" selection-end-line="176" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/IInclinationDealService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="75" lean-forward="true" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/renewable/gateway/service/impl/IRegisteredInfoServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="197" column="1" lean-forward="true" selection-start-line="197" selection-start-column="1" selection-end-line="197" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.10/commons-codec-1.10.jar!/org/apache/commons/codec/binary/Hex.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/renewable/gateway/util/HexUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/util/OriginDBUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/ISensorDataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/impl/ISensorDataServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="102" column="74" lean-forward="true" selection-start-line="102" selection-start-column="74" selection-end-line="102" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/IRegisteredInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/util/AbstractCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="173" column="32" selection-start-line="173" selection-start-column="32" selection-end-line="173" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="210" column="25" selection-start-line="210" selection-start-column="25" selection-end-line="210" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/controller/portal/InclinationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="29" column="52" lean-forward="true" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/sensor/InclinationDeal826T.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="218" column="28" lean-forward="true" selection-start-line="218" selection-start-column="28" selection-end-line="218" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/common/Const.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+          <folding>
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1133#1134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/controller/portal/SensorRegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1957">
+          <caret line="123" column="43" selection-start-line="123" selection-start-column="43" selection-end-line="123" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/SerialPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="77" column="73" selection-start-line="77" selection-start-column="73" selection-end-line="77" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/common/sensor/InclinationConst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="204" column="74" selection-start-line="204" selection-start-column="74" selection-end-line="204" selection-end-column="74" />
+          <folding>
+            <element signature="e#6491#6492#0" expanded="true" />
+            <element signature="e#6572#6573#0" expanded="true" />
+            <element signature="e#7835#7836#0" expanded="true" />
+            <element signature="e#7917#7918#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/IInclinationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/sensor/InclinationDeal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
+          <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;method#list2OriginData#0;class#InclinationDeal#0" />
             <element signature="docComment;method#unsignedShortToByte2#0;class#InclinationDeal#0" />
-            <element signature="method#unsignedShortToByte2#0;class#InclinationDeal#0" />
             <element signature="method#int2Byte#0;class#InclinationDeal#0" />
+            <element signature="method#objece2ListData#0;class#InclinationDeal#0" />
             <element signature="docComment;method#objece2ListData#1;class#InclinationDeal#0" />
             <element signature="method#objece2ListData#1;class#InclinationDeal#0" />
-            <element signature="docComment;method#origin2Double#0;class#InclinationDeal#0" />
-            <element signature="method#origin2Double#0;class#InclinationDeal#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/impl/IInclinationDealServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="39" column="66" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/dao/InclinationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/service/impl/IInclinationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="127" column="102" selection-start-line="127" selection-start-column="93" selection-end-line="127" selection-end-column="102" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/taskDemo/simpleTimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="57" column="52" lean-forward="true" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
+        <state relative-caret-position="687">
+          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/InclinationMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="81" column="22" lean-forward="true" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/util/HexUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2394">
+          <caret line="168" column="23" selection-start-line="168" selection-start-column="23" selection-end-line="168" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/sensor/InclinationDeal526T.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="245" column="13" selection-start-line="245" selection-start-column="13" selection-end-line="245" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/util/SerialPortUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="157" column="41" selection-start-line="157" selection-start-column="41" selection-end-line="157" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1441,17 +1523,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/SerialListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="97" column="61" lean-forward="true" selection-start-line="97" selection-start-column="61" selection-end-line="97" selection-end-column="61" />
+        <state relative-caret-position="285">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/serial/SerialPool.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/renewable/gateway/util/OtherUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="93" column="75" selection-start-line="93" selection-start-column="75" selection-end-line="93" selection-end-column="75" />
+        <state relative-caret-position="357">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1461#1462#0" expanded="true" />
+            <element signature="e#1534#1535#0" expanded="true" />
           </folding>
         </state>
       </provider>

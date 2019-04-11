@@ -1,1222 +1,155 @@
-[15:22:00.075][ERROR][c.r.gateway.serial.SerialListener][Thread-12] 无此传感器标识符，请添加配置，或检查硬件设备
-[16:33:37.070][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
-	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
-	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Jedis.set(Jedis.java:121) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:60) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.net.SocketTimeoutException: Read timed out
-	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:127) ~[na:1.8.0_172]
-	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
-	... 23 common frames omitted
-[16:33:42.074][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
-	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
-	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Jedis.set(Jedis.java:121) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:60) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.net.SocketTimeoutException: Read timed out
-	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:127) ~[na:1.8.0_172]
-	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
-	... 23 common frames omitted
-[16:33:47.083][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
-	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
-	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Jedis.set(Jedis.java:121) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:60) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.net.SocketTimeoutException: Read timed out
-	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:127) ~[na:1.8.0_172]
-	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
-	... 23 common frames omitted
-[16:40:08.002][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.util.NoSuchElementException: Unable to validate object
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:506) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-[16:40:13.004][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
-	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
-	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Jedis.set(Jedis.java:121) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:60) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.net.SocketTimeoutException: Read timed out
-	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:127) ~[na:1.8.0_172]
-	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
-	... 22 common frames omitted
-[16:45:42.023][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
-	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
-	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Jedis.set(Jedis.java:121) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:60) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.net.SocketTimeoutException: Read timed out
-	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:127) ~[na:1.8.0_172]
-	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
-	... 22 common frames omitted
-[16:45:48.996][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.util.NoSuchElementException: Unable to validate object
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:506) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-[16:47:17.022][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
-	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
-	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Jedis.set(Jedis.java:121) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:60) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.net.SocketTimeoutException: Read timed out
-	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:127) ~[na:1.8.0_172]
-	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
-	... 22 common frames omitted
-[16:47:32.022][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.util.NoSuchElementException: Unable to validate object
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:506) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-[16:47:39.064][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.util.NoSuchElementException: Unable to validate object
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:506) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-[16:51:43.001][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.util.NoSuchElementException: Unable to validate object
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:506) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-[16:51:49.050][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.util.NoSuchElementException: Unable to validate object
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:506) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-[16:52:13.000][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.util.NoSuchElementException: Unable to validate object
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:506) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-[16:53:33.997][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
-	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
-	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Jedis.set(Jedis.java:121) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:60) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.net.SocketTimeoutException: Read timed out
-	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:127) ~[na:1.8.0_172]
-	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
-	... 22 common frames omitted
-[16:53:42.004][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: connect timed out
-	at redis.clients.jedis.Connection.connect(Connection.java:207) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106) ~[jedis-2.9.0.jar:na]
-	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-Caused by: java.net.SocketTimeoutException: connect timed out
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_172]
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_172]
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_172]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_172]
-	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_172]
-	at redis.clients.jedis.Connection.connect(Connection.java:184) ~[jedis-2.9.0.jar:na]
-	... 25 common frames omitted
-[16:53:47.019][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: connect timed out
-	at redis.clients.jedis.Connection.connect(Connection.java:207) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106) ~[jedis-2.9.0.jar:na]
-	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-Caused by: java.net.SocketTimeoutException: connect timed out
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_172]
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_172]
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_172]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_172]
-	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_172]
-	at redis.clients.jedis.Connection.connect(Connection.java:184) ~[jedis-2.9.0.jar:na]
-	... 25 common frames omitted
-[16:53:52.003][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: connect timed out
-	at redis.clients.jedis.Connection.connect(Connection.java:207) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106) ~[jedis-2.9.0.jar:na]
-	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-Caused by: java.net.SocketTimeoutException: connect timed out
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_172]
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_172]
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_172]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_172]
-	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_172]
-	at redis.clients.jedis.Connection.connect(Connection.java:184) ~[jedis-2.9.0.jar:na]
-	... 25 common frames omitted
-[16:53:57.020][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: connect timed out
-	at redis.clients.jedis.Connection.connect(Connection.java:207) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106) ~[jedis-2.9.0.jar:na]
-	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-Caused by: java.net.SocketTimeoutException: connect timed out
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_172]
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_172]
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_172]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_172]
-	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_172]
-	at redis.clients.jedis.Connection.connect(Connection.java:184) ~[jedis-2.9.0.jar:na]
-	... 25 common frames omitted
-[16:54:02.998][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.util.NoSuchElementException: Unable to validate object
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:506) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-[16:55:01.995][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.util.NoSuchElementException: Unable to validate object
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:506) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-[16:55:09.059][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.util.NoSuchElementException: Unable to validate object
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:506) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-[16:55:52.020][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: connect timed out
-	at redis.clients.jedis.Connection.connect(Connection.java:207) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106) ~[jedis-2.9.0.jar:na]
-	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-Caused by: java.net.SocketTimeoutException: connect timed out
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_172]
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_172]
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_172]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_172]
-	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_172]
-	at redis.clients.jedis.Connection.connect(Connection.java:184) ~[jedis-2.9.0.jar:na]
-	... 25 common frames omitted
-[16:55:57.019][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: connect timed out
-	at redis.clients.jedis.Connection.connect(Connection.java:207) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106) ~[jedis-2.9.0.jar:na]
-	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-Caused by: java.net.SocketTimeoutException: connect timed out
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_172]
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_172]
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_172]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_172]
-	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_172]
-	at redis.clients.jedis.Connection.connect(Connection.java:184) ~[jedis-2.9.0.jar:na]
-	... 25 common frames omitted
-[16:56:02.002][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: connect timed out
-	at redis.clients.jedis.Connection.connect(Connection.java:207) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106) ~[jedis-2.9.0.jar:na]
-	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-Caused by: java.net.SocketTimeoutException: connect timed out
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_172]
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_172]
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_172]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_172]
-	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_172]
-	at redis.clients.jedis.Connection.connect(Connection.java:184) ~[jedis-2.9.0.jar:na]
-	... 25 common frames omitted
-[16:56:07.019][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: connect timed out
-	at redis.clients.jedis.Connection.connect(Connection.java:207) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106) ~[jedis-2.9.0.jar:na]
-	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-Caused by: java.net.SocketTimeoutException: connect timed out
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_172]
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_172]
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_172]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_172]
-	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_172]
-	at redis.clients.jedis.Connection.connect(Connection.java:184) ~[jedis-2.9.0.jar:na]
-	... 25 common frames omitted
-[16:56:36.994][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
-	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
-	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Jedis.set(Jedis.java:121) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:60) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.net.SocketTimeoutException: Read timed out
-	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:127) ~[na:1.8.0_172]
-	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
-	... 22 common frames omitted
-[17:00:46.997][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.util.NoSuchElementException: Unable to validate object
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:506) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-[17:01:11.996][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.util.NoSuchElementException: Unable to validate object
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:506) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-[17:01:18.998][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.util.NoSuchElementException: Unable to validate object
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:506) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-[17:01:47.009][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.util.NoSuchElementException: Unable to validate object
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:506) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-[17:03:02.024][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: connect timed out
-	at redis.clients.jedis.Connection.connect(Connection.java:207) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106) ~[jedis-2.9.0.jar:na]
-	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-Caused by: java.net.SocketTimeoutException: connect timed out
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_172]
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_172]
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_172]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_172]
-	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_172]
-	at redis.clients.jedis.Connection.connect(Connection.java:184) ~[jedis-2.9.0.jar:na]
-	... 25 common frames omitted
-[17:04:47.063][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
-	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
-	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Jedis.set(Jedis.java:121) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:60) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.net.SocketTimeoutException: Read timed out
-	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:127) ~[na:1.8.0_172]
-	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
-	... 22 common frames omitted
-[17:17:12.002][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.util.NoSuchElementException: Unable to validate object
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:506) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-[17:17:19.062][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.util.NoSuchElementException: Unable to validate object
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:506) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-[17:20:37.020][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: connect timed out
-	at redis.clients.jedis.Connection.connect(Connection.java:207) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106) ~[jedis-2.9.0.jar:na]
-	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-Caused by: java.net.SocketTimeoutException: connect timed out
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_172]
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_172]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_172]
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_172]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_172]
-	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_172]
-	at redis.clients.jedis.Connection.connect(Connection.java:184) ~[jedis-2.9.0.jar:na]
-	... 25 common frames omitted
-[17:20:43.988][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.util.NoSuchElementException: Unable to validate object
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:506) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-[17:20:49.073][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisException: Could not get a resource from the pool
-	at redis.clients.util.Pool.getResource(Pool.java:51) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.common.RedisPool.getJedis(RedisPool.java:51) ~[classes/:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:59) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.util.NoSuchElementException: Unable to validate object
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:506) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
-	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
-	... 18 common frames omitted
-[17:23:08.989][ERROR][com.renewable.gateway.util.RedisPoolUtil][pool-1-thread-1] set key:set_4 value:0 error
-redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
-	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
-	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239) ~[jedis-2.9.0.jar:na]
-	at redis.clients.jedis.Jedis.set(Jedis.java:121) ~[jedis-2.9.0.jar:na]
-	at com.renewable.gateway.util.RedisPoolUtil.set(RedisPoolUtil.java:60) ~[classes/:na]
-	at com.renewable.gateway.serial.sensor.InclinationDeal.command2Origin(InclinationDeal.java:73) [classes/:na]
-	at com.renewable.gateway.taskDemo.simpleTimer.requireSerialData(simpleTimer.java:52) [classes/:na]
-	at sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source) ~[na:na]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.0.3.RELEASE.jar:4.0.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_172]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_172]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-Caused by: java.net.SocketTimeoutException: Read timed out
-	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_172]
-	at java.net.SocketInputStream.read(SocketInputStream.java:127) ~[na:1.8.0_172]
-	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
-	... 22 common frames omitted
+[10:31:30.005][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:31:30.039][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:31:35.002][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:31:35.002][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:31:40.004][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:31:40.006][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:31:45.004][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:31:45.010][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:31:45.042][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:31:50.002][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:31:50.004][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:31:55.004][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:31:55.025][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:00.003][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:00.003][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:05.002][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:05.039][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:05.041][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:10.004][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:10.006][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:15.003][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:15.003][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:20.004][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:20.025][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:25.002][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:25.004][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:30.002][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:30.024][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:30.041][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:35.003][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:35.005][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:40.003][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:40.003][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:45.004][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:45.005][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:50.001][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:50.003][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:55.003][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:32:55.003][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:33:00.003][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:33:00.005][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:33:05.002][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:33:05.004][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:33:10.004][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:33:10.006][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:33:15.003][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:33:15.023][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:33:20.003][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:33:20.005][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:33:25.002][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:33:25.002][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:33:30.003][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:33:30.003][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:33:35.003][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:33:35.005][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:33:40.002][ERROR][c.r.gateway.serial.SerialListener][Thread-21] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:33:40.002][ERROR][c.r.gateway.serial.SerialListener][Thread-19] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:34:00.003][ERROR][c.r.gateway.serial.SerialListener][Thread-12] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:34:00.034][ERROR][c.r.gateway.serial.SerialListener][Thread-14] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:34:05.003][ERROR][c.r.gateway.serial.SerialListener][Thread-12] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:34:05.005][ERROR][c.r.gateway.serial.SerialListener][Thread-12] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:34:10.003][ERROR][c.r.gateway.serial.SerialListener][Thread-12] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:34:10.005][ERROR][c.r.gateway.serial.SerialListener][Thread-12] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:45:00.039][ERROR][c.r.gateway.serial.SerialListener][Thread-16] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:45:05.003][ERROR][c.r.gateway.serial.SerialListener][Thread-16] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:45:10.003][ERROR][c.r.gateway.serial.SerialListener][Thread-16] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:45:15.002][ERROR][c.r.gateway.serial.SerialListener][Thread-16] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:45:20.003][ERROR][c.r.gateway.serial.SerialListener][Thread-16] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:45:25.003][ERROR][c.r.gateway.serial.SerialListener][Thread-16] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:45:30.003][ERROR][c.r.gateway.serial.SerialListener][Thread-16] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:45:35.003][ERROR][c.r.gateway.serial.SerialListener][Thread-16] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:45:40.002][ERROR][c.r.gateway.serial.SerialListener][Thread-16] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:45:45.003][ERROR][c.r.gateway.serial.SerialListener][Thread-16] 无此传感器标识符，请添加配置，或检查硬件设备
+[10:45:50.004][ERROR][c.r.gateway.serial.SerialListener][Thread-16] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:14:25.080][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:14:30.053][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:14:35.027][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:14:40.048][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:14:45.059][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:14:50.044][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:14:55.050][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:15:00.039][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:15:05.050][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:15:10.068][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:15:15.046][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:15:20.063][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:15:25.036][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:15:35.064][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:15:40.037][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:15:45.058][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:15:50.032][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:15:55.054][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:16:00.064][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:16:05.055][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:16:10.054][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:16:15.044][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:16:20.051][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:16:25.073][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:16:30.046][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:16:40.041][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:16:45.046][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:16:50.035][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:16:55.042][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:17:00.064][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:17:05.037][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:17:10.064][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:17:15.032][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:17:20.055][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:17:25.059][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:17:30.049][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:17:35.060][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:17:40.028][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:17:45.055][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:17:50.061][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:17:55.045][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:18:00.052][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:18:05.041][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:18:10.047][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:18:15.068][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:18:20.049][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:18:25.069][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:18:30.038][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:18:40.066][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:18:45.045][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:18:50.060][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:18:55.035][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:19:00.057][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:19:05.062][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:19:10.052][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:19:15.058][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:19:20.047][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:19:25.053][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:19:30.027][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:19:35.048][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:19:40.055][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:19:45.050][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:19:50.049][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[14:19:55.040][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[16:17:50.090][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[16:19:04.265][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[16:19:05.268][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[16:19:10.039][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[16:19:15.261][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[16:19:20.067][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[16:19:25.269][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[16:19:30.247][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[16:19:35.286][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[16:19:40.267][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[16:19:45.269][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[16:19:50.268][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[16:20:00.268][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[16:20:05.056][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[16:20:10.273][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[16:20:15.050][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
+[16:20:20.269][ERROR][c.r.gateway.serial.SerialListener][Thread-15] 无此传感器标识符，请添加配置，或检查硬件设备
